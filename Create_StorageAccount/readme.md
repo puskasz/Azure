@@ -2,9 +2,9 @@ Deploy a storage account to a resource group from Git.
 
 **Azure CLI**
 
-New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateUri "https://raw.githubusercontent.com/puskasz/Azure/main/Create_StorageAccount/Create_StorageAccount.bicep"
+az deployment group create --resource-group $resourceGroupName --template-uri"https://raw.githubusercontent.com/puskasz/Azure/main/Create_StorageAccount/Create_StorageAccount.bicep"
 
-New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateUri "https://raw.githubusercontent.com/puskasz/Azure/main/Create_StorageAccount/Create_StorageAccount.json"
+az deployment group create --resource-group $resourceGroupName --template-uri "https://raw.githubusercontent.com/puskasz/Azure/main/Create_StorageAccount/Create_StorageAccount.json"
 
 **PowerShell**
 
